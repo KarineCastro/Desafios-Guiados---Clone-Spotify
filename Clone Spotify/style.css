@@ -5,7 +5,7 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -33,6 +33,28 @@ body{
     height: 40px;
     width: auto;
 }
+/* Utility Class */
+.btn-primary{
+    width: auto;
+    background: var(--default-green);
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: all 300ms ease;
+}
+.btn-primary:hover{
+    background: var(--light-green);
+    cursor:pointer;
+}
+
+.logo{
+    height: 40px;
+    width: auto;
+} 
 
 /* Navbar */
 #navbar{
@@ -46,20 +68,20 @@ body{
 }
 
 #navbar .navbar-container{
-    width: 60%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
+    justify-content: end;
+    padding: 10px;
 }
 
 #navbar .navbar-container ul{
-    display: flex;
+    width: 20%;
+    display:  flex;
     list-style: none;
     font-weight: bold;
 }
 #navbar .navbar-container ul li{
-    padding: 0 20px;
+    padding: 0 30px;
     transform: all 300ms ease;
 }
 
@@ -74,7 +96,7 @@ body{
 
 /* Showcase */
 #showcase{
-    height: 100vh;
+    min-height: 100em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,11 +114,13 @@ body{
 
 #showcase .showcase-container h2{
     font-size: 5rem;
+    width: auto;
 }
 
 #showcase .showcase-container p{
 margin: 15px 0;
-font-size: 1.1rem;
+font-size: 1.2rem;
+width: auto;
 }
 
 /* Footer */
@@ -109,18 +133,18 @@ font-size: 1.1rem;
 
 #footer .footer-content{
     display: flex;
-    width: 60px ;
     margin: auto;
-    justify-content: space-between;
+    padding: auto;
+    justify-content: center;
 }
 
 #footer .footer-content .footer-menu{
-   margin: 0 60px;
+   margin: 0 50px;
    list-style: none; 
 }
 
 #footer .footer-content .footer-menu .footer-menu-item{
-    margin: 0 25px;
+    margin: 0 5px;
     transition: all 300ms ease;
 }
 
@@ -137,6 +161,7 @@ font-size: 1.1rem;
 }
 
 /* Footer Socials */
+
 .socials{
     display: flex;
 }
@@ -153,6 +178,7 @@ cursor: pointer;
 }
 
 /* Footer Info */
+
 .footer-info{
     display: flex;
     justify-content: space-between;
